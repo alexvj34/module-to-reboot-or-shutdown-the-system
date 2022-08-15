@@ -1,0 +1,23 @@
+#include <conio.h>
+#include <stdlib.h>
+#include <iostream>
+int main()
+{
+	_getch();
+	int choice;
+	std::cout << "1. shotdown your computer \n";
+	std::cout << "2. restart your computer \n";
+	std::cout << "\n enter your choice : ";
+	std::cin >> choice;
+	switch (choice)
+	{
+	case 1: std::cout << "your system will be shutdown after 20 second \n";
+		system("c:\\windows\\system32\\shutdown /s /t 20 \n\n");
+		break;
+	case 2: std::cout << "your system will be restarted after 20 second \n";
+		system("c:\\windows\\system32\\shutdown /r /t 20 \n\n");
+		break;
+	default: std::cout << "wrong choice...! !\n";
+	}
+	_getch();
+}
